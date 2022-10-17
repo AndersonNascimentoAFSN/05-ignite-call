@@ -1,3 +1,4 @@
 {
-  "extends": "@andersonnascimentoafsn-ui/eslint-config"
+  "extends": "@andersonnascimentoafsn-ui/eslint-config",
+  "ignorePatterns": ["dist/*"]
 }
