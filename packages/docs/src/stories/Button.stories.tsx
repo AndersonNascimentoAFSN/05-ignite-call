@@ -1,13 +1,13 @@
-import { StoryObj, Meta } from '@storybook/react';
+import { StoryObj, Meta } from '@storybook/react'
 
-import { Button, ButtonProps } from '@andersonnascimentoafsn-ui/react';
+import { Button, ButtonProps } from '@andersonnascimentoafsn-ui/react'
 
 export default {
   title: 'Components/Button',
   component: Button,
   args: {
     children: 'Click Here',
-    size: 'big'
+    size: 'big',
   },
   argTypes: {
     children: {
@@ -26,10 +26,9 @@ export default {
       options: ['small', 'big'],
       control: {
         type: 'inline-radio',
-      }
+      },
     },
   },
-} as Meta<ButtonProps>;
+} as Meta<ButtonProps>
 
-export const Primary: StoryObj<ButtonProps> = {};
-
+export const Primary: StoryObj<ButtonProps> = {}

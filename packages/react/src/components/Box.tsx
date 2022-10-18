@@ -1,4 +1,4 @@
-import { ComponentProps, ReactNode } from 'react'
+import { ComponentProps, ElementType, ReactNode } from 'react'
 import { styled } from '../styles'
 
 export const Box = styled('div', {
@@ -8,6 +8,9 @@ export const Box = styled('div', {
   border: '1px solid $gray600',
 })
 
+Box.displayName = 'Box'
+
 export interface BoxProps extends ComponentProps<typeof Box> {
   children: ReactNode
+  as?: ElementType
 }

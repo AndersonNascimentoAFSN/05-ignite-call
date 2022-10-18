@@ -1,4 +1,4 @@
-import { ReactNode, ComponentProps } from 'react'
+import { ReactNode, ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const Button = styled('button', {
@@ -28,8 +28,11 @@ export const Button = styled('button', {
   },
 })
 
+Button.displayName = 'Button'
+
 export interface ButtonProps extends ComponentProps<typeof Button> {
   children: ReactNode
+  as?: ElementType
 }
 
 // export type ButtonProps = {
