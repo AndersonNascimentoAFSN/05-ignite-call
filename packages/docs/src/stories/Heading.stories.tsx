@@ -9,6 +9,14 @@ export default {
     children: 'Lorem ipsum',
     size: 'md',
   },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Por padrão o heading sempre será um `h2`, mas podemos alterar isso com a propriedade `as`',
+      },
+    },
+  },
   argTypes: {
     children: {
       name: 'children',
@@ -35,7 +43,7 @@ export const Primary: StoryObj<HeadingProps> = {}
 
 export const CustomTag: StoryObj<HeadingProps> = {
   args: {
-    children: 'Strong text',
-    as: 'strong',
+    children: 'H1 Heading',
+    as: 'h1',
   },
 }
