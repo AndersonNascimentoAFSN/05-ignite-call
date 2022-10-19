@@ -18,6 +18,7 @@ export const {
   theme,
   createTheme,
   config,
+  keyframes,
 } = createStitches({
   themeMap: {
     ...defaultThemeMap,
