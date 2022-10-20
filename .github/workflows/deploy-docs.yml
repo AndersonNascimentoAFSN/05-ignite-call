@@ -25,7 +25,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          TURBO_TOKEN: oqBI1eAuhIoMUU1u7ESpmOyl
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           TURBO_TEAM: afsn
 
 
