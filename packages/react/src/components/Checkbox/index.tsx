@@ -8,7 +8,7 @@ export interface CheckboxProps
 
 export function Checkbox() {
   return (
-    <CheckboxContainer>
+    <CheckboxContainer aria-label="checkbox" role="checkbox">
       <CheckboxIndicator asChild>
         <Check weight="bold" />
       </CheckboxIndicator>
