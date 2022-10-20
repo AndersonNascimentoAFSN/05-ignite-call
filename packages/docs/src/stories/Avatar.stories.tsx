@@ -9,7 +9,13 @@ export default {
     src: 'https://github.com/andersonnascimentoafsn.png',
     alt: 'Anderson Nascimento',
   },
-  argTypes: {},
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
   parameters: {
     docs: {
       description: {
