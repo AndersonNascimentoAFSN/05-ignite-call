@@ -13,6 +13,9 @@ export default {
     disabled: false,
   },
   argTypes: {
+    onClick: {
+      action: 'onClick',
+    },
     children: {
       // type: { name: 'string', required: true },
       defaultValue: 'Send',
